@@ -1,0 +1,132 @@
+
+<swiper class="swiper-box" indicator-dots="true" indicator-color="rgba(252, 163, 199,0.9)" autoplay="true" interval="3000" duration="500" >
+    <block wx:for="{{imgUrls}}">
+        <swiper-item>
+             <image src="{{item.more_pic}}" class="slide-image"/>
+        </swiper-item>
+    </block>
+</swiper>
+
+<view class="contain">
+    <view class="detail-box">
+        <view class="detail-item">{{listJewellery.title}}</view>
+        <view class="detail-item">{{listJewellery.tips}}</view>
+        <view class="detail-item">
+            <text>￥</text>
+            <text class="price">{{listJewellery.minPrices}}-{{listJewellery.maxPrices}}</text>
+        </view>
+        <view class="detail-item">
+            <text>运费：{{listJewellery.freight}}</text>
+            <text class="stock">剩余：{{listJewellery.stock}}</text>
+        </view>
+    </view>
+
+    <view class="detail-box">
+        <view class="detail-item">选择：{{listJewellery.style}} {{listJewellery.color}}</view>
+    </view>
+
+    <view class="detail-box">
+        <view class="detail-item">
+            <image class="icon" src="../image/icon_identification.png"></image>
+            <text>店铺认证</text>
+            <image class="icon" src="../image/icon_identification.png"></image>
+            <text>担保交易</text>
+        </view>
+    </view>
+
+    <view class="info" >
+        <view class="info-title">宝贝详情</view>
+        <view class="info-content">
+            <view>链子材质:{{listJewellery.chainMaterial}}</view>
+            <view>金属材质:{{listJewellery.metalMaterial}}</view>
+            <view>链子样式:{{listJewellery.chainStyle}}</view>
+            <view>坠子材质:{{listJewellery.material}}</view>
+            <view>品牌:{{listJewellery.brand}}</view>
+            <view>图案:{{listJewellery.pattern}}</view>
+            <view>镶嵌材质:{{listJewellery.mosaicMaterial}}</view>
+            <view>风格:{{listJewellery.form}}</view>
+            <view>试用性别:{{listJewellery.trialSex}}</view>
+            <view>成色:{{listJewellery.condition}}</view>
+            <view>是否现货:{{listJewellery.goods}}</view>
+            <view>新奇特:{{listJewellery.characteristic}}</view>
+        </view>
+    </view>
+
+    <view class="list-pic">
+        <image src="https://img.alicdn.com/imgextra/i4/3021408719/TB2Z541c3xlpuFjSszbXXcSVpXa_!!3021408719.jpg"></image>
+        <image src="https://img.alicdn.com/imgextra/i4/3021408719/TB2jqR.c3JlpuFjSspjXXcT.pXa_!!3021408719.jpg"></image>
+        <image src="https://img.alicdn.com/imgextra/i1/3021408719/TB2tQl7c80kpuFjSsppXXcGTXXa_!!3021408719.jpg"></image>
+        <image src="https://img.alicdn.com/imgextra/i1/3021408719/TB2oc4Uc9BjpuFjSsplXXa5MVXa_!!3021408719.jpg"></image>
+        <image src="https://img.alicdn.com/imgextra/i1/3021408719/TB2QINLc9BjpuFjy1XdXXaooVXa_!!3021408719.jpg"></image>
+        <image src="https://img.alicdn.com/imgextra/i2/3021408719/TB2ijJMc1J8puFjy1XbXXagqVXa_!!3021408719.jpg"></image>
+        <image src="https://img.alicdn.com/imgextra/i4/3021408719/TB28wdWc80lpuFjSszdXXcdxFXa_!!3021408719.jpg"></image>
+        <image src="https://img.alicdn.com/imgextra/i1/3021408719/TB2Z_VrdOpnpuFjSZFkXXc4ZpXa_!!3021408719.jpg"></image>
+        <image src="https://img.alicdn.com/imgextra/i3/3021408719/TB2o.JndUhnpuFjSZFEXXX0PFXa_!!3021408719.jpg"></image>
+    </view>
+    <view class="copyright">一恋倾星版权所有</view>
+</view>
+
+<view class="detail-footer">
+    <view class="detail-1" bindtap="cart">
+        <image src="../image/cart.png"></image>
+        <text>购物车</text>
+    </view>
+    <view class="detail-2" bindtap="addcart"><text>加入购物车</text></view>
+    <view class="detail-3" bindtap="buy"><text>立即购买</text></view>
+</view>
+
+
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+
+        <view class="action-content">
+            <view class="action-header">
+                <image src="{{imgUrls[0].more_pic}}" class="mian-pic"></image>
+                <view class="intro">
+                    <text>{{listJewellery.title}}</text>
+                    <text class="price">￥{{listJewellery.minPrices}}-{{listJewellery.maxPrices}}</text>
+                    <image src="../image/close.png" bindtap="actionSheetTap"></image>
+                </view>
+            </view>
+            <view class="action-info">
+                <view class="info-item">
+                    <view>款式:</view>
+                    <view class="item-list">
+                        <block wx:for="{{style}}">
+                            <text class="style {{currentStyleIndex==index ? 'active' : ''}}" bindtap="chooseStyle" data-index="{{index}}">{{item}}</text>
+                        </block>
+                    </view>
+                </view>
+                <view class="info-item">
+                    <view>颜色:</view>
+                    <view class="item-list">
+                        <block wx:for="{{color}}">
+                            <text class="style {{currentColorIndex==index ? 'active' : ''}}" bindtap="chooseColor" data-index="{{index}}">{{item}}</text>
+                        </block>
+                    </view>
+                </view>
+                <view class="info-item stock">
+                    <view class="left">
+                        <view>购买数量:</view>
+                        <view class="count">剩余1033件</view>
+                    </view>
+                    <view class="operation"> 
+                        <view class="op" bindtap="reduce">-</view>
+                        <view class="op num">{{count}}</view>
+                        <view class="op" bindtap="increase">+</view>
+                    </view>
+                </view>
+                <view class="info-item message">
+                    <text>其他要求：</text>
+                    <view class="input">
+                        <input type="text" placeholder="点击填写留言"/>
+                    </view>
+                    <!--<text class="message">点击填写留言</text>-->
+                </view>
+            </view>
+            <view class="action-footer">
+                <button bindtap="ensure" wx:if="{{choice == 'cart'}}">确定</button>
+                <button bindtap="next" wx:else>下一步</button>
+            </view>
+        </view>
+    <!--<action-sheet-cancel class="cancel">取消</action-sheet-cancel>-->
+</action-sheet>

@@ -1,0 +1,109 @@
+<!--pages/yiguo/order/completion.wxml-->
+<view class="container">
+
+  <view class="status" bindtap="selectaddress">
+    <view>
+        <image class="left" src="../image/car.png"></image>
+        <text>商家已发货</text>
+    </view>
+    <view class="progress">
+        <text class="left">买家付款</text>
+        <text>商家发货</text>
+        <text class="right">交易完成</text>
+    </view>
+    <image class="state" src="../image/payment.jpg"></image>
+  </view>
+
+  <view class="header">
+    <image class="left" src="../image/car.png"></image>
+    <view class="location">
+      <view class="address express">
+        <text>中通速递 </text>
+        <text>运单编号:</text>
+        <text>1321654651</text>
+      </view>
+      <view class="address font-color logistics">
+        <text>广东省广州市天河区车陂大塘中接真利来801撒地方撒地方撒地方撒地方撒地方阿斯蒂芬</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="header">
+    <image class="left" src="../image/positioning@3x.png"></image>
+    <view class="location">
+      <view class="address">
+        <view class="name left">李国华</view>
+        <view class="phone right">2235431534</view>
+      </view>
+      <view class="address font-color">
+        <text>收货地址：</text>
+        <text>广东省广州市天河区车陂大塘中接真利来801</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="logo">
+    <image src="../image/Store_icon@3x.png"></image>
+    <text>一恋倾星</text>
+  </view>
+  <view class="detail-box">
+    <view class="detail-item">
+      <image class="buyPic" src="https://img.alicdn.com/imgextra/i4/3021408719/TB2Z541c3xlpuFjSszbXXcSVpXa_!!3021408719.jpg"></image>
+      <view class="buyTips">
+        <text>【一恋倾星】925纯银项链女</text>
+        <text class="price">￥139.00</text>
+      </view>
+      <view class="buyTips color">
+        <text>蓝心吊坠含链条,蓝色</text>
+        <text class="count">X1</text>
+      </view>
+    </view>
+    <view class="detail-item">
+      <text class="refund right">申请退款</text>
+      <text class="watch right" bindtap="readMessage">查看留言</text>
+    </view>
+    <view class="detail-item distribution">
+      <text>配送方式</text>
+      <text class="freight">免运费</text>
+    </view>
+    <view class="detail-item board">
+      <text>留言</text>
+      <text class="message">无</text>
+    </view>
+    <view class="detail-item total">
+      <text>合计</text>
+      <text class="totalPrices">￥139.00</text>
+    </view>
+  </view>
+  <view class="detail-box">
+    <view class="detail-item">
+      <text class="sms">短信通知收件人</text>
+      <switch class="notification" checked bindchange="switch1Change" />
+    </view>
+  </view>
+  <view class="detail-box clearTop">
+    <view class="detail-item">
+      <text>商品金额</text>
+      <text class="money">￥139.00</text>
+    </view>
+    <view class="detail-item">
+      <text>商品金额</text>
+      <text class="money">+￥0.00</text>
+    </view>
+  </view>
+
+  <view class="detail-box order-info">
+    <view class="detail-item">
+      <text>订单编号：</text>
+      <text>1321651332</text>
+    </view>
+    <view class="detail-item">
+      <text>创建时间：</text>
+      <text>2017-01-16 16:32:32</text>
+    </view>
+    <view class="detail-item">
+      <text>付款时间：</text>
+      <text>2017-01-16 16:10:15</text>
+    </view>
+  </view>
+</view>

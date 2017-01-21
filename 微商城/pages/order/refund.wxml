@@ -1,0 +1,57 @@
+<!--pages/yiguo/order/order.wxml-->
+<view class="container">
+    <view class="content">
+        <view class="item">
+            <text>商品名称：</text>
+            <text class="right">【一恋倾星】925纯银项链女 情侣项链sdfdsf</text>
+        </view>
+        <view class="item">
+            <text>付款金额：</text>
+            <text class="right">￥139.00</text>
+        </view>
+        <view class="item">
+            <text>订单编号：</text>
+            <text class="right">213543241561</text>
+        </view>
+        <view class="item">
+            <text>交易时间：</text>
+            <text class="right">2017-01-16 16:31:50</text>
+        </view>
+    </view>
+    <view class="list">
+        <view class="list-item" bindtap="refundMode">
+            <text>处理方式</text>
+            <text class="font-color">请选择处理方式</text>
+            <image src="../image/right_arrow@3x.png" class="right_arrow" style="width:15rpx;height:40rpx; "></image>
+        </view>
+        <view class="list-item">
+            <text>退款原因</text>
+            <view class="input"> 
+                <input type="text" placeholder="请选择退款原因"/>
+            </view>
+           
+        </view>
+        <view class="list-item">
+            <text>退款金额</text>
+            <text class="font-color">￥139.00</text>
+        </view>
+        <view class="list-item">
+            <text>退款说明</text>
+            <view class="input"> 
+                <input type="text" placeholder="最多200字"/>
+            </view>
+        </view>
+    </view>
+    <view class="submit"> 
+        <image src="../image/submit.jpg" wx:if="{{images == ''}}" bindtap="submit"></image>
+        <block wx:else>
+            <block wx:for="{{images}}">
+                <image src="{{item}}"></image>
+            </block>
+            <image src="../image/submit.jpg" bindtap="submit"></image>
+        </block>   
+    </view>
+    <view class="footer">
+        <view class="apply">提交申请</view>
+    </view>
+</view>

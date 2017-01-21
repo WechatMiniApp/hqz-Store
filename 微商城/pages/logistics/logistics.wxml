@@ -1,0 +1,31 @@
+<view class="top" >
+    <view class="order">
+        <image class="shopImg" src="../image/product_picture@3x.png"></image>
+        <view class="shopDetail">
+            <text class="shopDesc">一恋倾星 S925纯银耳钉 爆款高档水钻耳环纯银镀白金</text>
+            <text class="shopStyle">白色款</text>
+        </view>
+        <view class="priceBox">
+            <text class="price">￥99</text>
+        </view>
+        <view class="numBox">
+            <text class="num">X1</text>
+        </view>
+    </view>
+</view>
+<view class="desc">
+    <view class="descBox">
+        <text class="textName">颜色:</text>
+        <text class="text">22222222</text>
+    </view>
+    <view class="descBox">
+        <text class="textName">留言:</text>
+        <text class="text">请发圆通快递请发圆通快递请发圆通快递请发圆通快递</text>
+    </view>
+</view>
+<view class="seeDetailBar">
+    <view class="seeDetailBtn">
+        <text class="btnText" bindtap="back">查看订单详情</text>
+    </view>
+    
+</view>

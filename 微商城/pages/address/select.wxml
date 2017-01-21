@@ -1,0 +1,31 @@
+<view class="container">
+    <view class="header" wx:for="{{list}}" wx:for-item="item" wx:key="{{index}}">
+      <view class="select">
+        <!--<image src="../image/no_select@3x.png"></image>-->
+        <icon wx:if="{{item.select}}" type="success_circle" size="25" bindtap="bindCheckbox" data-index="{{index}}" class="shopIcon" />
+        <icon wx:else type="circle" size="25" bindtap="bindCheckbox" data-index="{{index}}" class="shopIcon" />
+      </view>
+      <view class="location">
+        <view class="address">
+          <text class="name">{{item.name}}, </text>
+          <text class="phone">{{item.phone}}</text>
+        </view>
+        <view class="address">
+          <text>收货地址：</text>
+          <text>{{item.address}}</text>
+        </view>
+      </view>
+      <image src="../image/edit@3x.png" class="edit" bindtap="edit" data-index="{{index}}"></image>
+    </view>
+
+  
+  <view class="footer" bindtap="addaddress">
+    <view class="select">
+      <image src="../image/addaddress.png"></image>
+    </view>
+    <view class="left">新增收货地址</view>
+    <view class="right_arrow">
+      <image src="../image/right_arrow@3x.png"></image>
+    </view>
+  </view>
+</view>

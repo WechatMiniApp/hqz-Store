@@ -1,0 +1,53 @@
+<view class="container">
+    <view class="list-item">
+        <text>收件人</text>
+        <view class="input"> 
+            <input type="text" placeholder="名字" value="{{name}}" bindinput="bindNameInput"/>
+        </view>
+        <!--<input type="text" placeholder="名字"/>-->
+    </view>
+    <view class="list-item">
+        <text>联系电话</text>
+        <view class="input"> 
+            <input type="number" placeholder="手机或固定电话" value="{{phone}}" bindinput="bindPhoneInput"/>
+        </view>
+    </view>
+    <view class="list-item">
+        <text>收货地址</text>
+        <view class="city">
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <view class="picker">
+                   <text>{{array[index]}}</text>
+                </view>
+            </picker>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <view class="picker">
+                   <text>{{array[index]}}</text>
+                </view>
+            </picker>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <view class="picker">
+                   <text>{{array[index]}}</text>
+                </view>
+            </picker>
+            <!--<text>省份</text>
+            <text>城市</text>
+            <text>区县</text>-->
+        </view>
+    </view>
+    <view class="list-item">
+        <text>详细地址</text>
+        <view class="input"> 
+            <input type="text" placeholder="街道门牌信息" value="{{address}}" bindinput="bindAddressInput"/>
+        </view>
+    </view>
+    <view class="list-item">
+        <text>邮政编码</text>
+        <view class="input"> 
+            <input type="number" placeholder="邮政编码(选填)"/>
+        </view>
+    </view>
+    <button class="save" hover-class="opacity" bindtap="save">保存</button>
+    <button class="cancel" hover-class="opacity">取消</button>
+</view>
+

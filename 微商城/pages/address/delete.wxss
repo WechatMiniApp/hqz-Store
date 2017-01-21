@@ -1,0 +1,61 @@
+/* pages/yiguo/address/delete.wxss */
+.container{
+    background-image: url('https://img.alicdn.com/imgextra/i4/3021408719/TB2km_ScHXlpuFjSszfXXcSGXXa_!!3021408719.png');
+    background-size: cover;
+    font-size: 30rpx;
+}
+.list-item{
+    height: 100rpx;
+    padding-left: 25rpx;
+    line-height: 100rpx;
+    border-bottom: 1rpx solid #b4b1b2;
+}
+.list-item text{
+    float: left;
+    width: 125rpx;
+    padding-right: 45rpx;
+}
+.list-item .input{
+    display:inline-block;
+    height: 100%;
+    overflow:hidden;
+    width:76%;
+}
+.list-item input{
+    display: inline-block;
+    width: 100%;
+    height: 100rpx;
+    color: #fca3c7;
+    line-height: 30rpx;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+.list-item .city{
+    overflow:hidden;
+}
+.list-item .city text{
+    width: 160rpx;
+    height: 100rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 15rpx;
+}
+.save{
+    margin-top: 20rpx;
+    width: 700rpx;
+    height: 88rpx;
+    background-color: #ff1373;
+}
+.delete{
+    margin-top: 20rpx;
+    width: 700rpx;
+    height: 88rpx;
+    background-color: #fac9dd;
+}
+.cancel{
+    margin-top: 20rpx;
+    width: 700rpx;
+    height: 88rpx;
+    background-color: #fac9dd;
+}

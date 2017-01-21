@@ -1,0 +1,44 @@
+/* pages/yiguo/order/refundMode.wxss */
+.container{
+    background-image: url('https://img.alicdn.com/imgextra/i4/3021408719/TB2km_ScHXlpuFjSszfXXcSGXXa_!!3021408719.png');
+    height: auto;
+    background-size: contain;
+    padding-bottom: 100rpx;
+    font-size: 30rpx;
+    box-sizing:border-box;
+    padding-top: 30rpx
+}
+.item{
+    margin-bottom: 20rpx;
+    border-bottom: 1rpx solid #888;
+    position: relative;
+    overflow: hidden;
+    box-sizing:border-box;
+    font-size: 30rpx;
+    background-color: #f2eaed
+}
+.item .select{
+    width:80rpx;
+    overflow:hidden;
+    display:inline-block;
+    height:120rpx;
+    line-height:120rpx;
+    text-align:center;
+}
+.item .select image{
+    width: 40rpx;
+    height: 40rpx;
+}
+.item .remarks{
+    width:80%;
+    box-sizing:border-box;
+    padding-top:15rpx;
+    display:inline-block;
+}
+.item .remarks text{
+    display: block;
+}
+.item .remarks text:nth-of-type(2){
+    color: #888;
+    line-height: 40rpx;
+}

@@ -1,0 +1,87 @@
+<view class="container">
+  <view class="status" bindtap="selectaddress">
+    <view class="pic">
+      <image class="left" src="../image/pending_payment@3x.png"></image>
+    </view>
+    <view class="tips">
+      <view>等待买家付款</view>
+      <view class="font-color wait">
+        <text>请于</text>
+        <text>30分</text>
+        <text>内付款,超时订单将自动关闭</text>
+      </view>
+    </view>
+  </view>
+  <view class="header" bindtap="selectaddress">
+    <image class="left" src="../image/positioning@3x.png"></image>
+    <view class="location">
+      <view class="address">
+        <view class="name left">李国华</view>
+        <view class="phone right">2235431534</view>
+      </view>
+      <view class="address font-color">
+        <text>收货地址：</text>
+        <text>广东省广州市天河区车陂大塘中接真利来801</text>
+      </view>
+    </view>
+    <image src="../image/right_arrow@3x.png" class="right_arrow" style="width:23rpx;height:46rpx; "></image>
+  </view>
+  <view class="logo">
+    <image src="../image/Store_icon@3x.png"></image>
+    <text>一恋倾星</text>
+  </view>
+  <view class="detail-box">
+    <view class="detail-item">
+      <image class="buyPic" src="https://img.alicdn.com/imgextra/i4/3021408719/TB2Z541c3xlpuFjSszbXXcSVpXa_!!3021408719.jpg"></image>
+      <view class="buyTips">
+        <text>【一恋倾星】925纯银项链女</text>
+        <text class="price">￥139.00</text>
+      </view>
+      <view class="buyTips color">
+        <text>蓝心吊坠含链条,蓝色</text>
+        <text class="count">X1</text>
+      </view>
+    </view>
+    <view class="detail-item distribution">
+      <text>配送方式</text>
+      <text class="freight">免运费</text>
+    </view>
+    <view class="detail-item board">
+      <text>留言</text>
+
+      <!--<text class="message">点击给商家留言</text>-->
+      <input placeholder="点击给商家留言" class="message" />
+    </view>
+    <view class="detail-item total">
+      <text>合计</text>
+      <text class="totalPrices">￥139.00</text>
+    </view>
+  </view>
+  <view class="detail-box">
+    <view class="detail-item">
+      <text class="sms">短信通知收件人</text>
+      <switch class="notification" checked bindchange="switch1Change" />
+    </view>
+  </view>
+  <view class="detail-box clearTop">
+    <view class="detail-item">
+      <text>商品金额</text>
+      <text class="money">￥139.00</text>
+    </view>
+    <view class="detail-item">
+      <text>商品金额</text>
+      <text class="money">+￥0.00</text>
+    </view>
+  </view>
+</view>
+<view class="detail-footer">
+  <view class="detail-1">
+    <view class="sum">
+      <text>合计：</text>
+      <text class="total">139.00</text>
+    </view>
+  </view>
+  <view class="detail-2" bindtap="Gopay">
+    <text>去支付</text>
+  </view>
+</view>

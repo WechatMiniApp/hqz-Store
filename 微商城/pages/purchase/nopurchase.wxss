@@ -1,0 +1,242 @@
+/* pages/yiguo/purchase/nopurchase.wxss */
+.container{
+    background-image: url('https://img.alicdn.com/imgextra/i4/3021408719/TB2km_ScHXlpuFjSszfXXcSGXXa_!!3021408719.png');
+    height: auto;
+    background-size: contain;
+    padding-bottom: 100rpx;
+    font-size: 30rpx;
+}
+.status{
+    padding: 25rpx;
+    border-bottom: 1rpx solid #ffd0e3;
+    position: relative;
+    font-size: 30rpx;
+}
+.status .pic{
+    float: left;
+    overflow:hidden;
+    display:inline-block;
+}
+.status .tips{
+    padding-left: 10rpx;
+    display:inline-block;
+}
+.status .wait{
+    font-size: 24rpx; 
+}
+.status image{
+    width: 70rpx;
+    height: 88rpx
+}
+.header{
+    padding: 25rpx;
+    border-bottom: 1rpx solid #ffd0e3;
+    position: relative;
+}
+.header image:nth-of-type(1){
+    width: 56rpx;
+    height: 56rpx;
+    padding-right: 20rpx;
+    float: left;
+}
+.header text{
+    /*display: inline-block;*/
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 30rpx;
+}
+.header .address text{
+    line-height: 40rpx;
+}
+
+
+.logo{
+    padding-left: 25rpx;
+    padding-top: 40rpx;
+    padding-bottom: 20rpx;
+}
+.logo image{
+    width: 35rpx;
+    height: 35rpx;
+    padding-right: 10rpx;
+    float: left
+}
+.logo text{
+    display: inline-block;
+    height: 30rpx;
+    line-height: 30rpx;
+    font-size: 30rpx;
+}
+.detail-box .freight{
+    margin-right: 25rpx;
+    float: right;
+    color: #b8a2ab;
+}
+
+
+
+.detail-box .buyPic{
+    width: 150rpx;
+    height: 200rpx;
+    display: inline-block;
+    float: left;
+    padding-right: 20rpx;
+    
+}
+.detail-box .buyTips{
+    padding-bottom: 25rpx;
+}
+.detail-box .buyTips .price{
+   float: right;
+   color: #ff1373;
+   margin-right: 25rpx;
+}
+.detail-box .color{
+    color: #b8a2ab;
+}
+.detail-box .buyTips .count{
+    float: right;
+    margin-right: 25rpx;
+}
+
+.intro{
+    width: 570rpx;
+    height: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.intro text{
+    display: block;
+    line-height: 50rpx;
+    width:80%;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+
+
+.detail-box{
+    padding-top: 25rpx;
+    margin-bottom: 20rpx;
+    background-color: #fac9dd;
+}
+.detail-box .detail-item{
+    padding-left: 25rpx;
+    height: auto;
+    overflow:hidden;
+    padding-bottom: 25rpx;
+}
+.detail-box .distribution{
+    height: 88rpx;
+    line-height: 88rpx;
+    border-bottom: 1rpx solid #b8a2ab;
+    padding-bottom: 0;
+}
+.detail-box .board{
+    height: 100rpx;
+    line-height: 100rpx;
+    border-bottom: 1rpx solid #b8a2ab;
+    padding-bottom: 0;
+}
+.detail-box .board text{
+    float: left;
+}
+.detail-box .board .message{
+    display: inline-block;
+    padding-left: 30rpx;
+    color: #b8a2ab;
+    height: 100rpx;
+    line-height: 30rpx;
+    width: 88%;
+    text-overflow: ellipsis
+}
+.detail-box .total{
+    height: 100rpx;
+    line-height: 100rpx;
+    border-bottom: 1rpx solid #b8a2ab;
+    padding-bottom: 0;
+}
+.detail-box .total .totalPrices{
+    float: right;
+    color: #ff1373;
+    padding-right: 25rpx;
+}
+.detail-box .sms{
+    padding-top: 16rpx;
+    height: 32rpx;
+    line-height: 32rpx;
+    display: inline-block;
+}
+.detail-box .notification{
+    float: right
+}
+.detail-box .money{
+    padding-right: 25rpx;
+    float: right;
+}
+
+
+/*底部*/
+.detail-footer{
+    position: fixed;
+    width: 100%;
+    height: 120rpx;
+    bottom: 0;
+    /*display: flex;
+    flex-direction: row;*/
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+}
+.detail-1{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    float: left;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: #f2eaed;
+}
+.detail-1 .sum{
+    padding-top:20rpx;
+    padding-right:20rpx;
+}
+.detail-1 image{
+    width: 40rpx;
+    height: 36rpx;
+    padding-bottom: 10rpx;
+}
+.detail-1 text{
+    font-size: 24rpx;
+    color: #333;
+}
+.detail-2{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff1b1b
+}
+
+
+/*付款*/
+.location{
+    width: 80%;
+    display: inline-block;
+}
+.address{
+    height:auto;
+    overflow:hidden;
+    display: inline-block;
+    width: 100%;
+}
+.right_arrow{
+    position:absolute;
+    right:10rpx;
+    top:70rpx;
+}

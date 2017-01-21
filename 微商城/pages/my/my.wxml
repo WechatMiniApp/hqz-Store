@@ -1,0 +1,43 @@
+<!--index.wxml-->
+
+  <view class="my-header">
+    <view  bindtap="bindViewTap" class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+  </view>
+  <!--我的订单-->
+
+
+  <view class="mainBG">
+    <view class="orderBar">
+      <view class="orderList">
+        <text class="orderListTitle">我的订单</text>
+        <text bindtap="orderList" class="allOrder" data-id="0" id="0">查看全部订单></text>
+      </view>
+      <view class="orderState">
+        <view class="orderDetail" bindtap="orderList" data-id="1" id="1">
+          <image class="orderImg"  src="../image/delivered.png"></image>
+          <text class="orderImgText" >待付款</text>
+        </view>
+        <view class="orderDetail" bindtap="orderList" data-id="2" id="2">
+          <image class="orderImg" src="../image/payment.png"></image>
+          <text class="orderImgText">待发货</text>
+        </view>
+        <view class="orderDetail" bindtap="orderList" data-id="3" id="3">
+          <image class="orderImg" src="../image/received.png"></image>
+          <text class="orderImgText">待收货</text>
+        </view>
+        <view class="orderDetail" bindtap="orderList" data-id="4" id="4">
+          <image class="orderImg" src="../image/completed.png"></image>
+          <text class="orderImgText">已完成</text>
+        </view>
+      </view>
+    </view>
+    <!--购物车-->
+    <view class="car" bindtap="car">
+      <text class="carName">购物车</text>
+      <text class="carNum">22222</text>
+    </view>
+  </view>
+ 

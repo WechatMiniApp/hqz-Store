@@ -1,0 +1,59 @@
+<view class="carShopName">
+    <!--<icon wx:if="{{selectedAllStatus}}" type="success_circle" size="35" class="allIcon"/>
+    <icon wx:else type="circle" size="35" class="allIcon"/>-->
+    <image class="store" src="../image/Store_icon@3x.png"></image>
+    <text class="shopName">一恋倾星</text>
+    <text class="edit" bindtap="edit" wx:if="{{edit=='none1'}}">完成</text>
+    <text class="edit" bindtap="edit" wx:if="{{edit=='block1'}}">编辑</text>
+</view>
+<view class="item-box">
+  <view class="items">
+    <view wx:for="{{list}}" wx:for-item="item"  wx:key='index'  class="item">
+        <view class="userInfo w100 flex-row" data-name="{{item.id}}" data-index="{{index}}"  class="inner txt">
+            <icon wx:if="{{item.select}}" type="success_circle" size="35" bindtap="bindCheckbox" data-index="{{index}}" class="shopIcon"/>
+            <icon wx:else type="circle" size="35" bindtap="bindCheckbox" data-index="{{index}}" class="shopIcon"/>
+            <image class="commodityImg"  src="{{item.pic}}"></image>
+            <view class="commodityDetail" wx:if="{{type=='block'}}">
+                <view class="goodsPrice">
+                    <view class="goodsDetail">{{item.product}}</view>
+                    <text class="shopPrice">￥{{item.price}}</text>
+                </view> 
+                <text class="shopNum">X{{item.num}}</text>
+            </view>
+            <view class="commodityNum" wx:if="{{type=='none'}}">
+                <view style="width:400rpx;height:65rpx;">
+                    <button data-index="{{index}}" id="{{item.id}}" class="leftMinus" disabled="{{inEditMode?false:true}}" bindtap="bindMinus">-</button>
+                    <text class="amount" disabled="true" value="">{{item.num}}</text>
+                    <button data-index="{{index}}" id="{{item.id}}" class="rightPlus" disabled="{{inEditMode?false:ture}}" bindtap="bindPlus">+</button>
+                </view>            
+                <text class="jianjie">{{item.labels}}</text>
+                <text class="jiage" >￥{{item.price}}</text>
+                <view data-index="{{index}}" bindtap = "delItem" class="inner del">删除</view>
+            </view>
+        </view>
+       
+    </view>
+  </view>
+</view>
+<view class="settlementBar">
+    <view bindtap="bindSelectAll" class="allSelectBar" >
+        <icon wx:if="{{selectedAllStatus}}" type="success_circle" size="35" class="allIcon"/>
+        <icon wx:else type="circle" size="35" class="allIcon"/>
+        <text>全选</text>
+    </view>
+  <view wx:if="{{Gopay}}" class="settlement normal">
+    结算
+  </view>
+  <view wx:else class="settlement">
+    结算
+  </view>
+    <view class="settlementPrice">
+        <view class="totalCost">
+           <text class="totalText">合计:{{total}}</text> 
+        </view>
+        <view class="desc">
+            <text class="descText">不含运费</text>
+        </view>
+    </view>
+    
+</view>

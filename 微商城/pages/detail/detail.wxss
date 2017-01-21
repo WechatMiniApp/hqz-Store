@@ -1,0 +1,266 @@
+page{
+    height: 100%;   
+}
+
+/*详情轮播图*/
+.swiper-box{
+    height: 700rpx;
+}
+.swiper-box image{
+    width: 750rpx;
+    height: 700rpx;
+}
+
+
+.contain{
+    background-image: url('https://img.alicdn.com/imgextra/i4/3021408719/TB2km_ScHXlpuFjSszfXXcSGXXa_!!3021408719.png');
+    background-size: cover;
+    padding-bottom: 120rpx;
+    font-size: 28rpx;
+}
+
+.detail-box{
+    padding-top: 25rpx;
+    padding-left: 25rpx;
+    margin-bottom: 20rpx;
+    background-color: #fac9dd;
+}
+.detail-box .detail-item{
+    padding-bottom: 25rpx;
+}
+/*.detail-box .detail-item .price{
+    color: #ff1373;
+}*/
+.price{
+    color: #ff1373;
+}
+.detail-box .stock{
+    margin-right: 25rpx;
+    float: right;
+}
+.detail-box .detail-item .icon{
+    width: 30rpx;
+    height: 22rpx;
+    margin-right: 10rpx;
+}
+.detail-box .detail-item .icon:nth-of-type(2){
+    margin-left: 30rpx;
+}
+
+.info{
+    margin-top: 50rpx;
+    margin-left: 25rpx;
+}
+.info .info-title{
+    padding-bottom: 40rpx;
+}
+.info .info-content{
+    box-sizing: border-box;
+    width: 702rpx;
+    padding: 10rpx 15rpx;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.info .info-content view{
+    width: 300rpx;
+    text-align: left;
+    margin-bottom: 30rpx;
+    overflow: hidden;
+}
+.list-pic image{
+    width: 100%;
+    height: 405rpx;
+}
+.copyright{
+    text-align: center;
+    font-size: 16rpx;
+    margin-top: 40rpx;
+    margin-bottom: 20rpx;
+    color: rgb(178, 178, 178)
+}
+
+
+/*底部*/
+.detail-footer{
+    position: fixed;
+    width: 100%;
+    height: 120rpx;
+    bottom: 0;
+    /*display: flex;
+    flex-direction: row;*/
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+}
+.detail-1{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fca3c7;
+}
+.detail-1 image{
+    width: 40rpx;
+    height: 36rpx;
+    padding-bottom: 10rpx;
+}
+.detail-1 text{
+    font-size: 24rpx;
+    color: #333;
+}
+.detail-2{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    background-color: #f47920
+}
+.detail-3{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.5
+  }
+  to {
+    opacity: 1
+  }
+}
+
+/*弹出框*/
+.action-content{
+    width: 100%;
+    height: auto;
+    font-size: 30rpx;
+    position: relative;
+    animation: fadeIn 2s;
+    background-color: #fac9dd;
+    box-sizing: border-box;
+}
+.action-content .action-header{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-left: 25rpx;
+    overflow: hidden;
+    padding-top: 25rpx;
+}
+.action-content .action-header .mian-pic{
+    float: left;
+    /*position: absolute;
+    bottom: 0;*/
+    width: 280rpx;
+    height: 280rpx;
+}
+.action-content .action-header .intro{
+    padding: 25rpx 25rpx 25rpx 315rpx;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+.action-content .action-header .intro text{
+    display: block;
+    line-height: 50rpx;
+    width:80%;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+.action-content .action-header .intro image{
+    width: 40rpx;
+    height: 40rpx;
+    position: absolute;
+    top: 25rpx;
+    right: 35rpx;
+}
+.action-content .action-info{
+    margin-top: 70rpx;
+    padding-left: 25rpx;
+}
+.action-content .action-info .info-item{
+    height:auto;
+    overflow:hidden;
+    padding-bottom: 40rpx;
+}
+.action-content .action-info .info-item .item-list{
+    width: 100%;
+}
+.action-content .action-info .info-item .item-list .style{
+    border: 1rpx solid #b7a3ab;
+    border-radius: 12rpx;
+    font-size: 24rpx;
+    display: inline-block;
+    max-width: 30%;
+    margin-right: 30rpx;
+    margin-top: 20rpx;
+}
+.action-content .action-info .stock{
+    padding: 40rpx 0;
+    margin-right: 25rpx;
+    margin-bottom: 40rpx;
+    border-top: 1rpx solid #b7a3ab;
+    border-bottom: 1rpx solid #b7a3ab;
+    overflow: hidden;
+}
+.action-content .action-info .stock .count{
+    font-size: 24rpx;
+    color: #b7a3ab;
+}
+.action-content .action-info .stock .operation{
+    width: 200rpx;
+    height: 70rpx;
+    float: right;
+}
+.action-content .action-info .stock .operation .op{
+    display: inline-block;
+    line-height: 70rpx;
+    text-align: center;
+    width: 30%;
+    height: 70rpx;
+    border: 1rpx solid #b7a3ab;
+    box-sizing: border-box;
+}
+.action-content .action-info .message text{
+    float: left;
+    line-height:60rpx;
+}
+.action-content .action-info .message .input{
+    display: inline-block;
+    width:76%;
+    overflow:hidden;
+    color: #b7a3ab;
+}
+.action-content .action-info .message input{
+    text-overflow: ellipsis
+}
+.action-footer button{
+    width: 100%;
+    height: 120rpx;
+    line-height: 120rpx;
+    text-align: center;
+    font-size: 36rpx;
+    border-radius: 0;
+    color: #fff;
+    background-color: #ff1111;
+}
+.left{
+    float: left
+}
+.active{
+    background-color: #ff1373;
+}

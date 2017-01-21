@@ -1,0 +1,92 @@
+/* pages/yiguo/address/select.wxss */
+.container{
+    background-image: url('https://img.alicdn.com/imgextra/i4/3021408719/TB2km_ScHXlpuFjSszfXXcSGXXa_!!3021408719.png');
+    height: auto;
+    background-size: contain;
+    padding-bottom: 100rpx;
+    font-size: 30rpx;
+    box-sizing:border-box;
+}
+.header{
+    border-bottom: 1rpx solid #ffd0e3;
+    position: relative;
+    overflow: hidden;
+    box-sizing:border-box;
+    font-size: 30rpx;
+}
+.header .select{
+    width:80rpx;
+    overflow:hidden;
+    display:inline-block;
+    height:200rpx;
+    line-height:200rpx;
+    float:left;
+    text-align: center;
+}
+.header .location{
+    width: 80%;
+    box-sizing:border-box;
+    padding-top: 30rpx;
+    display: inline-block;
+}
+.header .location .address{
+    height:auto;
+    overflow:hidden;
+    display: inline-block;
+    width: 100%;
+}
+.header .address:nth-of-type(2) text{
+    color: #888;
+    line-height: 40rpx;
+}
+.header image:nth-of-type(1){
+    width: 40rpx;
+    height: 40rpx;
+}
+.header .edit{
+    position:absolute;
+    width: 60rpx;
+    height: 60rpx;
+    right:20rpx;
+    top:70rpx;
+}
+
+.footer{
+    border-top: 1rpx solid #ffd0e3;
+    position: fixed;
+    width: 100%;
+    height: 100rpx;
+    bottom: 0;
+    overflow: hidden;
+    box-sizing:border-box;
+    font-size: 30rpx;
+    background-color: #f2eaed
+}
+.footer .select{
+    width:80rpx;
+    overflow:hidden;
+    display:inline-block;
+    height:100rpx;
+    line-height:100rpx;
+    float:left;
+    text-align: center;
+}
+.footer .select image{
+    width: 40rpx;
+    height: 40rpx;
+}
+.footer view:nth-of-type(2){
+    height: 100rpx;
+    line-height: 85rpx;
+}
+.footer .right_arrow{
+    overflow:hidden;
+    height:100rpx;
+    line-height:100rpx;
+    float:right;
+    padding-right:25rpx;
+}
+.footer .right_arrow image{
+    width: 15rpx;
+    height: 30rpx;
+}

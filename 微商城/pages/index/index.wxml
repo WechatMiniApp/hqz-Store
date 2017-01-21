@@ -1,0 +1,84 @@
+<view class="container">
+<view class="my-header">
+  <view bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="../image/logo.png" background-size="cover"></image>
+    <image class="userinfo-nickname" src="../image/brand.png"></image>
+  </view>
+</view>
+<view class="list-tab">
+  <ul>
+    <li class="{{current == 0 ? 'active' : ''}}" catchtap="switchSlider" data-index="0">一恋倾星精选</li>
+    <li class="{{current == 1 ? 'active' : ''}}" catchtap="switchSlider" data-index="1">爆款</li>
+    <li class="{{current == 2 ? 'active' : ''}}" catchtap="switchSlider" data-index="2">春节热款</li>
+  </ul>
+</view>
+<swiper class="swiper-box" current="{{current}}" indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}" bindchange="changeSlider">
+  <block>
+
+    <!-- 1 -->
+    <swiper-item>
+      <scroll-view scroll-y="true" class="scroll-box">
+        <view class="list-view">
+          <view class="list-box" wx:for="{{listgoods}}" wx:for-item="list" wx:key="index" data-id="{{list.id}}" bindtap="lookdetail">
+            <view data-id="{{list.id}}">
+              <view class="list-cover">
+                <image src="{{list.pic_url}}" class="list-cover-img"></image>
+              </view>
+              <view class="list-text">
+                <view class="list-title">
+                  <text>RMB:</text>
+                  <text class="prices">199</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+    <!--2  -->
+    <swiper-item>
+      <scroll-view scroll-y="true" class="scroll-box">
+        <view class="list-view">
+          <view class="list-box" wx:for="{{listgoods}}" wx:for-item="list" wx:key="index" data-id="{{list.id}}" bindtap="lookdetail">
+            <view data-id="{{list.id}}">
+              <view class="list-cover">
+                <image src="{{list.pic_url}}" class="list-cover-img"></image>
+              </view>
+              <view class="list-text">
+                <view class="list-title">
+                  <text>RMB:</text>
+                  <text class="prices">199</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+    <!-- 3 -->
+    <swiper-item>
+      <scroll-view scroll-y="true" class="scroll-box">
+        <view class="list-view">
+          <view class="list-box" wx:for="{{listgoods}}" wx:for-item="list" wx:key="index" data-id="{{list.id}}" bindtap="lookdetail">
+            <view data-id="{{list.id}}">
+              <view class="list-cover">
+                <image src="{{list.pic_url}}" class="list-cover-img"></image>
+              </view>
+              <view class="list-text">
+                <view class="list-title">
+                  <text>RMB:</text>
+                  <text class="prices">199</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+</view>

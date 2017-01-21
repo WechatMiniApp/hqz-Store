@@ -1,0 +1,99 @@
+/**index.wxss**/
+page{
+    height: 100%;
+    background-image: url('https://img.alicdn.com/imgextra/i4/3021408719/TB2km_ScHXlpuFjSszfXXcSGXXa_!!3021408719.png');
+    background-size: cover;
+}
+.my-header{
+  padding:40rpx 0;
+  background-image: url('https://img.alicdn.com/imgextra/i4/3021408719/TB2dC_ScHXlpuFjSszfXXcSGXXa_!!3021408719.png');
+  background-size: cover;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userinfo-avatar {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  background-size:cover;
+}
+.userinfo-nickname {
+  padding: 20rpx 0 0 0;  
+  color: #aaa;
+  font-size: 48rpx;
+}
+/**orderBar**/
+.mainBG{
+    height: 400rpx;
+    padding-top:20rpx;
+}
+.orderBar{
+    background-color: #FAC9DD;
+    border-bottom: 1rpx solid black;
+}
+.orderList{
+    margin: 0 40rpx;
+    height: 60rpx;
+    border-bottom: 1rpx solid black;
+    line-height: 60rpx;
+    
+}
+.orderListTitle{
+    float: left;
+    font-weight: bold;
+    font-size: 30rpx;
+}
+.allOrder{
+    float: right;
+    color: #C0C0C0;
+    font-size: 24rpx;
+}
+.orderState{
+    padding: 27rpx 20rpx;
+    height: 120rpx;
+}
+.orderDetail{
+    float:left;
+    width:80rpx;
+    padding: 0 48rpx;
+    text-align: center;
+}
+.orderImg{
+    width:80rpx;
+    height:67rpx;
+    float:left;
+}
+.orderImgText{
+    font-size:24rpx;
+    
+}
+/**购物车**/
+.car{
+    height: 60rpx;
+    background-color:  #FAC9DD;
+    margin-top: 20rpx;
+    border-bottom: 1rpx solid black;
+}
+.carName{
+    line-height: 60rpx;
+    font-size: 30rpx;
+    font-weight: bold;
+    margin-left:40rpx;
+}
+.carNum{
+    padding: 5rpx 20rpx;
+    border-radius:45rpx;
+    background-color: #C0C0C0;
+    font-size: 30rpx;
+    float: right;
+    margin-top: 10rpx;
+    margin-right: 30rpx;
+}
+/**版权**/
+.ca{
+    position: absolute;
+    bottom: 0
+}

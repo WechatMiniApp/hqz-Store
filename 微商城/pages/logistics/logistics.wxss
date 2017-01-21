@@ -1,0 +1,102 @@
+page{
+    height: 100%;
+    background-image: url('https://img.alicdn.com/imgextra/i4/3021408719/TB2km_ScHXlpuFjSszfXXcSGXXa_!!3021408719.png');
+    background-size: cover;
+}
+.top{
+    height:200rpx;
+    padding-top:20rpx;
+}
+.order{
+    height: 160rpx;
+    background-color: white;
+    padding: 20rpx 24rpx;
+}
+.shopImg{
+    float: left;
+    width: 160rpx;
+    height: 160rpx;
+    border-radius: 50%;
+}
+.shopDetail{
+    float: left;
+    width: 348rpx;
+    height: 134rpx;
+    margin-left: 20rpx;
+    margin-top: 26rpx;
+}
+.shopDesc{
+    width: 348rpx;
+    height: 64rpx;
+    color: #333;
+    font-size:24rpx;
+    float: left;
+}
+.shopStyle{
+    margin-top: 20rpx;
+    color: #888;
+    font-size: 24rpx;
+    float: left;
+}
+.priceBox{
+    float: right;
+    width: 160rpx;
+    margin-top: 26rpx;
+}
+.price{
+    float: right;
+    font-size: 32rpx;
+    color: #ff1373;
+}
+.numBox{
+    float: right;
+    width: 160rpx;
+    margin-top: 45rpx;
+}
+.num{
+    float: right;
+    font-size: 32rpx;
+    color: #888;
+}
+/**详情***/
+.desc{
+    margin-top: 20rpx;
+}
+.descBox{
+    width: 94%;
+    float: left;
+    background-color: white;
+    border-bottom: 1rpx solid #eee;
+    padding: 24rpx;
+}
+.textName{
+    float: left;
+    font-size: 28rpx;
+    color: #333;
+}
+.text{
+    width: 85%;
+    float: left;
+    font-size: 28rpx;
+    color: #333;
+    margin-left: 20rpx;
+}
+/**详情按钮***/
+.seeDetailBar{
+    width: 100%;
+    float: left;
+    margin-top: 40rpx;
+}
+.seeDetailBtn{
+    background-color: #fca3c7;
+    width: 670rpx;
+    height: 94rpx;
+    margin: 0 auto;
+    border-radius: 15rpx;
+    text-align: center;
+    line-height: 94rpx;
+}
+.btnText{
+    color: #fff;
+    font-size: 36rpx;
+}

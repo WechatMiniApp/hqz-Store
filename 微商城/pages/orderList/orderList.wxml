@@ -1,0 +1,209 @@
+<view class="swiper-tab">  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" id="0" data-id="0" bindtap="swichNav">全部</view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" id="1" data-id="1" bindtap="swichNav">待付款</view>  
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" id="2" data-id="2" bindtap="swichNav">待发货</view>  
+    <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" id="3" data-id="3" bindtap="swichNav">待收货</view>  
+    <view class="swiper-tab-list {{currentTab==4 ? 'on' : ''}}" data-current="4" id="4" data-id="4"bindtap="swichNav">已完成</view>  
+</view>  
+<swiper current="{{currentTab}}" class="swiper-box" duration="300"  bindchange="bindChange">  
+    <!-- 全部 -->  
+    <swiper-item class="swiper-item">  
+      <view class="noOrder" wx:if="{{allShop==''}}" >
+        <text class="noOrderText">—————暂无订单—————</text>
+      </view>
+      <view style="height:100%;" wx:else>
+        <block wx:for="{{allShop}}" wx:for-item="item" wx:if="{{item.uqired=='4'}}">
+          <view class="listBlock">
+            <view class="listHeader">
+              <text class="listShop">店铺:{{item.shopName}}</text>
+              <text class="transaction">{{item.status}}</text>
+            </view>
+            <view class="order">
+                <view class="orderTitle">
+                  <text class="orderNumber">订单编号:{{item.orderNum}}</text>
+                </view>
+                <view class="orderDetail">
+                  <view class="orderImg">
+                    <image class="img" src="{{item.pic}}"></image>
+                  </view>
+                  <view class="orderBox">
+                    <view class="orderDeta"><text class="productText">{{item.product}}</text></view>
+                    <view class="orderDeta"><text class="labelsText">{{item.labels}}</text></view>
+                  </view>
+                  <view class="priceBox">
+                    <text class="price">￥{{item.price}}</text>
+                    <text class="shopNum">x{{item.num}}</text>
+                  </view>
+                </view>
+            </view>
+            <view class="total">
+              <text class="totalNum">{{item.count}}</text>
+              <text class="totalText">合计:￥</text>
+            </view>
+          </view>
+        </block>
+      </view> 
+    </swiper-item>  
+
+    <!--待付款-->
+    <swiper-item>  
+      <view class="noOrder" wx:if="{{delivered==''}}">
+        <text class="noOrderText">—————暂无订单—————</text>
+      </view>
+      <view wx:else>
+        <block wx:for="{{allShop}}" wx:for-item="item" wx:if="{{item.uqired=='1'}}">
+          <view class="listBlock">
+            <view class="listHeader">
+              <text class="listShop">店铺:{{item.shopName}}</text>
+              <text class="transaction">{{item.status}}</text>
+            </view>
+            <view class="order">
+                <view class="orderTitle">
+                  <text class="orderNumber">订单编号:{{item.orderNum}}</text>
+                </view>
+                <view class="orderDetail">
+                  <view class="orderImg">
+                    <image class="img" src="{{item.pic}}"></image>
+                  </view>
+                  <view class="orderBox">
+                    <view class="orderDeta"><text class="productText">{{item.product}}</text></view>
+                    <view class="orderDeta"><text class="labelsText">{{item.labels}}</text></view>
+                  </view>
+                  <view class="priceBox">
+                    <text class="price">￥{{item.price}}</text>
+                    <text class="shopNum">x{{item.num}}</text>
+                  </view>
+                </view>
+            </view>
+            <view class="total">
+              <text class="totalNum">59.90</text>
+              <text class="totalText">合计:￥</text>
+            </view>
+            <view class="paymentBar">
+              <view class="surePay">确认付款</view>
+              <view class="cancel" bindtap="cancel">取消订单</view>
+            </view>
+          </view>
+        </block>
+      </view> 
+    </swiper-item>  
+    <!-- 待发货 -->  
+    <swiper-item>  
+      <view class="noOrder" wx:if="{{allShop==''}}" >
+        <text class="noOrderText">—————暂无订单—————</text>
+      </view>
+      <view wx:else>
+        <block wx:for="{{allShop}}" wx:for-item="item" wx:if="{{item.uqired=='2'}}">
+          <view class="listBlock">
+            <view class="listHeader">
+              <text class="listShop">店铺:{{item.shopName}}</text>
+              <text class="transaction">{{item.status}}</text>
+            </view>
+            <view class="order">
+                <view class="orderTitle">
+                  <text class="orderNumber">订单编号:{{item.orderNum}}</text>
+                </view>
+                <view class="orderDetail">
+                  <view class="orderImg">
+                    <image class="img" src="{{item.pic}}"></image>
+                  </view>
+                  <view class="orderBox">
+                    <view class="orderDeta"><text class="productText">{{item.product}}</text></view>
+                    <view class="orderDeta"><text class="labelsText">{{item.labels}}</text></view>
+                  </view>
+                  <view class="priceBox">
+                    <text class="price">￥{{item.price}}</text>
+                    <text class="shopNum">x{{item.num}}</text>
+                  </view>
+                </view>
+            </view>
+            <view class="total">
+              <text class="totalNum">{{item.count}}</text>
+              <text class="totalText">合计:￥</text>
+            </view>
+          </view>
+        </block>
+      </view> 
+    </swiper-item>  
+    <!--待收货-->
+    <swiper-item>  
+      <view class="noOrder" wx:if="{{allShop==''}}" >
+        <text class="noOrderText">—————暂无订单—————</text>
+      </view>
+      <view wx:else>
+        <block wx:for="{{allShop}}" wx:for-item="item" wx:if="{{item.uqired=='3'}}">
+          <view class="listBlock">
+            <view class="listHeader">
+              <text class="listShop">店铺:{{item.shopName}}</text>
+              <text class="transaction">{{item.status}}</text>
+            </view>
+            <view class="order">
+                <view class="orderTitle">
+                  <text class="orderNumber">订单编号:{{item.orderNum}}</text>
+                </view>
+                <view class="orderDetail">
+                  <view class="orderImg">
+                    <image class="img" src="{{item.pic}}"></image>
+                  </view>
+                  <view class="orderBox">
+                    <view class="orderDeta"><text class="productText">{{item.product}}</text></view>
+                    <view class="orderDeta"><text class="labelsText">{{item.labels}}</text></view>
+                  </view>
+                  <view class="priceBox">
+                    <text class="price">￥{{item.price}}</text>
+                    <text class="shopNum">x{{item.num}}</text>
+                  </view>
+                </view>
+            </view>
+            <view class="total">
+              <text class="totalNum">{{item.count}}</text>
+              <text class="totalText">合计:￥</text>
+            </view>
+            <view class="paymentBar">
+              <view class="surePay">确认收货</view>
+              <view class="cancel">查看物流</view>
+            </view>
+          </view>
+        </block>
+      </view> 
+    </swiper-item> 
+
+    <!--已完成--> 
+    <swiper-item>  
+      <view class="noOrder" wx:if="{{allShop==''}}" >
+        <text class="noOrderText">—————暂无订单—————</text>
+      </view>
+      <view wx:else>
+        <block wx:for="{{allShop}}" wx:for-item="item" wx:if="{{item.uqired=='4'}}">
+          <view class="listBlock">
+            <view class="listHeader">
+              <text class="listShop">店铺:{{item.shopName}}</text>
+              <text class="transaction">{{item.status}}</text>
+            </view>
+            <view class="order">
+                <view class="orderTitle">
+                  <text class="orderNumber">订单编号:{{item.orderNum}}</text>
+                </view>
+                <view class="orderDetail">
+                  <view class="orderImg">
+                    <image class="img" src="{{item.pic}}"></image>
+                  </view>
+                  <view class="orderBox">
+                    <view class="orderDeta"><text class="productText">{{item.product}}</text></view>
+                    <view class="orderDeta"><text class="labelsText">{{item.labels}}</text></view>
+                  </view>
+                  <view class="priceBox">
+                    <text class="price">￥{{item.price}}</text>
+                    <text class="shopNum">x{{item.num}}</text>
+                  </view>
+                </view>
+            </view>
+            <view class="total">
+              <text class="totalNum">{{item.count}}</text>
+              <text class="totalText">合计:￥</text>
+            </view>
+          </view>
+        </block>
+      </view> 
+    </swiper-item>    
+</swiper>  

@@ -1,0 +1,223 @@
+/* pages/yiguo/order/completion.wxss */
+.container{
+    background-image: url('https://img.alicdn.com/imgextra/i4/3021408719/TB2km_ScHXlpuFjSszfXXcSGXXa_!!3021408719.png');
+    height: auto;
+    background-size: contain;
+    padding-bottom: 100rpx;
+    font-size: 30rpx;
+}
+.status{
+    padding: 40rpx 25rpx 30rpx;
+    border-bottom: 1rpx solid #ffd0e3;
+    position: relative;
+    font-size: 30rpx;
+}
+.status view:nth-of-type(1){
+    line-height: 66rpx;
+    overflow: hidden;
+}
+.status image{
+    width: 86rpx;
+    height: 66rpx;
+    padding-right: 20rpx;
+}
+.status .progress{
+    line-height: 50rpx;
+    text-align: center;
+}
+.status .state{
+    width:92%;
+    height:20rpx;
+    padding-left:3%;
+    line-height: 20rpx;
+}
+.header{
+    padding: 25rpx;
+    border-bottom: 1rpx solid #ffd0e3;
+    position: relative;
+}
+.header image:nth-of-type(1){
+    width: 56rpx;
+    height: 56rpx;
+    padding-right: 20rpx;
+    float: left;
+}
+.header text{
+    /*display: inline-block;*/
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 30rpx;
+}
+.header .address text{
+    line-height: 40rpx;
+}
+.location{
+    width: 86%;
+    display: inline-block;
+}
+.address{
+    height:auto;
+    overflow:hidden;
+    display: inline-block;
+    width: 100%;
+}
+.express{
+    color: #fc6768;
+}
+.logistics{
+    overflow:hidden;
+    height:40rpx;
+    line-height:40rpx;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+
+
+.logo{
+    padding-left: 25rpx;
+    padding-top: 40rpx;
+    padding-bottom: 20rpx;
+}
+.logo image{
+    width: 35rpx;
+    height: 35rpx;
+    padding-right: 10rpx;
+    float: left
+}
+.logo text{
+    display: inline-block;
+    height: 30rpx;
+    line-height: 30rpx;
+    font-size: 30rpx;
+}
+.detail-box .freight{
+    margin-right: 25rpx;
+    float: right;
+    color: #b8a2ab;
+}
+
+
+
+.detail-box .buyPic{
+    width: 150rpx;
+    height: 200rpx;
+    display: inline-block;
+    float: left;
+    padding-right: 20rpx;
+    
+}
+.detail-box .buyTips{
+    padding-bottom: 25rpx;
+}
+.detail-box .buyTips .price{
+   float: right;
+   color: #ff1373;
+   margin-right: 25rpx;
+}
+.detail-box .color{
+    color: #b8a2ab;
+}
+.detail-box .buyTips .count{
+    float: right;
+    margin-right: 25rpx;
+}
+
+.intro{
+    width: 570rpx;
+    height: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.intro text{
+    display: block;
+    line-height: 50rpx;
+    width:80%;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    white-space: nowrap
+}
+
+
+
+.detail-box{
+    padding-top: 25rpx;
+    margin-bottom: 20rpx;
+    background-color: #fac9dd;
+}
+.detail-box .detail-item{
+    padding-left: 25rpx;
+    height: auto;
+    overflow:hidden;
+    padding-bottom: 25rpx;
+}
+.detail-box .detail-item .refund{
+    color: #ff1373;
+    display: inline-block;
+    border: 1rpx solid #888;
+    border-radius: 6rpx;
+    margin-right: 25rpx;
+}
+.detail-box .detail-item .watch{
+    color: #888;
+    display: inline-block;
+    border: 1rpx solid #888;
+    border-radius: 6rpx;
+    margin-right: 20rpx;
+}
+.detail-box .distribution{
+    height: 88rpx;
+    line-height: 88rpx;
+    border-bottom: 1rpx solid #b8a2ab;
+    padding-bottom: 0;
+}
+.detail-box .board{
+    height: 100rpx;
+    line-height: 100rpx;
+    border-bottom: 1rpx solid #b8a2ab;
+    padding-bottom: 0;
+}
+.detail-box .board text{
+    float: left;
+}
+.detail-box .board .message{
+    display: inline-block;
+    padding-left: 30rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    width: 85%;
+    text-overflow: ellipsis
+}
+.detail-box .total{
+    height: 100rpx;
+    line-height: 100rpx;
+    border-bottom: 1rpx solid #b8a2ab;
+    padding-bottom: 0;
+}
+.detail-box .total .totalPrices{
+    float: right;
+    color: #ff1373;
+    padding-right: 25rpx;
+}
+.detail-box .sms{
+    padding-top: 16rpx;
+    height: 32rpx;
+    line-height: 32rpx;
+    display: inline-block;
+}
+.detail-box .notification{
+    float: right
+}
+.detail-box .money{
+    padding-right: 25rpx;
+    float: right;
+}
+.order-info{
+    color: #888;
+    font-size: 24rpx;
+    line-height: 30rpx;
+}
+.order-info .detail-item{
+    padding-bottom: 10rpx;
+}

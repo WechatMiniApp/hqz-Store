@@ -1,0 +1,48 @@
+<view class="top">
+    <view class="orderStatus">
+        <image class="shopImg" src="../image/product_picture@3x.png"></image>
+        <view class="logisticsBox">
+            <text class="logisticsStatus">物流状态</text>
+            <view class="status">
+                <text class="statusName">商品数量:</text>
+                <text class="statusMes">共1件</text>
+            </view>
+            <view class="status">
+                <text class="statusName">承运公司:</text>
+                <text class="statusMes">【中通速递】</text>
+            </view>
+            <view class="status">
+                <text class="statusName">运单编号:</text>
+                <text class="statusMes">900156364542</text>
+            </view>
+        </view>
+    </view>
+</view>
+
+<!--订单跟踪-->
+<view class="noState" wx:if="{{list==''}}">
+    <text class="noStateText">暂无状态</text>
+</view>
+<view class="orderTrackBox" wx:else>
+    <view class="orderTrackTitle">订单跟踪</view>
+    <view class="trackBox" >
+        <view class="trackSolid">
+            <block wx:for="{{list}}" wx:for-item="item">
+                <view class="orderMesBox" id="{{item.id}}">
+                    <view class="orderRight">
+                        <view class="orderMes">
+                            <view class="message">{{item.address}}</view>
+                            <view class="message">{{item.dispatcher}}</view>
+                            <view class="message">{{item.status}}</view>
+                        </view>
+                        <view class="orderMes">
+                            <view class="message">{{item.time}}</view>
+                        </view>
+                    </view>
+                    <view class="circle"></view>
+                </view>
+            </block>
+        </view>
+    </view>     
+</view>
+

@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="item">
+    <view class="select left">
+      <image src="../image/no_select@3x.png"></image>
+    </view>
+    <view class="remarks">
+        <text>退货退款</text>
+        <text>已收到货,需要退还已收到的货物</text>
+    </view>
+  </view>
+  <view class="item">
+    <view class="select left">
+      <image src="../image/no_select@3x.png"></image>
+    </view>
+    <view class="remarks">
+        <text>仅退款</text>
+        <text>未收到货,需要退还购买金额</text>
+    </view>
+  </view>
+</view>

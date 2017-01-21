@@ -1,0 +1,172 @@
+/**orderList.wxss**/  
+page{
+    height: 100%;
+    background-image: url('https://img.alicdn.com/imgextra/i4/3021408719/TB2km_ScHXlpuFjSszfXXcSGXXa_!!3021408719.png');
+    background-size: cover;
+}
+/**tab切换**/
+.swiper-tab{  
+    width: 100%;  
+    border-bottom: 2rpx solid #777777;  
+    text-align: center;  
+    line-height: 80rpx;
+    background-color: #FAC9DD;
+    padding-top: 20rpx;
+    position: fixed;
+    z-index: 9999;
+}  
+.swiper-tab-list{  
+    font-size: 30rpx;  
+    display: inline-block;  
+    width: 20%;  
+    color: black; 
+}  
+.on{ 
+    color: red;  
+    border-bottom: 5rpx solid red;
+}  
+.swiper-box{ 
+    display: block; 
+    height: 100%; 
+    width: 100%;  
+    position: absolute;
+    margin-top: 110rpx;
+    z-index: -9999;
+}  
+
+.swiper-box view{  
+    text-align: center;  
+}  
+
+/*订单中的列表***/
+.noOrder{
+    margin-top: 207rpx;
+}
+.noOrderText{
+    font-size: 30rpx;
+    color: #A9A9A9;
+}
+.listBlock{
+    margin-top: 20rpx;
+}
+.listHeader{
+    height: 54rpx;
+    background-color: #FAC9DD;
+    padding: 0 35rpx;
+    font-size: 30rpx;
+    font-weight: bold;
+}
+.listShop{
+    line-height: 54rpx;
+    float: left;
+}
+.transaction{
+    line-height: 54rpx;
+    float: right;
+    color: red;
+}
+/***订单列表的每一列**/
+.orderTitle{
+    background-color: #fac9dd;
+    padding: 0 35rpx;
+    height: 46rpx;
+}
+.orderNumber{
+    float: left;
+    font-size: 24rpx;
+    line-height: 46rpx;
+}
+.orderDetail{
+    background-color: #F2EAED;
+    height: 181rpx;
+    padding: 20rpx 35rpx;
+}
+.orderImg{
+     width: 181rpx;
+    height: 181rpx;
+    float: left;
+}
+.img{
+    width: 181rpx;
+    height: 181rpx;
+}
+.orderBox{
+    width: 300rpx;
+    height: 181rpx;
+    float: left;
+    margin-left: 20rpx;
+}
+.orderDeta{
+     width: 300rpx;
+     line-height: 30rpx;
+}
+.productText{
+    float: left;
+    font-size: 24rpx;
+    text-align: left;
+}
+.introdText{
+    float: left;
+    font-size: 24rpx;
+}
+.labelsText{
+    float: left;
+    font-size: 18rpx;
+    color: #A9A9A9;
+}
+.priceBox{
+    width: 102rpx;
+    float: right;
+}
+.price{
+    float: right;
+    height: 67rpx;
+    line-height: 67rpx;
+    font-size: 24rpx;
+}
+.shopNum{
+    float: right;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 18rpx;
+}
+/***合计**/
+.total{
+    height: 80rpx;
+    background-color:  #fac9dd;
+    font-size: 30rpx;
+    line-height: 80rpx;
+}
+.totalText{
+    float: right;
+}
+.totalNum{
+    float: right;
+    margin-right: 24rpx;
+    color: red;
+}
+/*付款栏***/
+.paymentBar{
+    height:80rpx;
+    border-top: 1rpx solid #A9A9A9;
+    font-size: 30rpx;
+    background-color: #FAC9DD;
+}
+.cancel{
+    float: right;
+    padding: 10rpx 20rpx;
+    border: 1rpx solid #888888;
+    margin-right: 30rpx;
+    margin-top: 10rpx;
+    color: #777777;
+    border-radius: 10rpx;
+}
+.surePay{
+    float: right;
+    padding: 10rpx 20rpx;
+    border: 1rpx solid red;
+    margin-right: 30rpx;
+    margin-top: 10rpx;
+    color: red;
+    border-radius: 10rpx;
+}

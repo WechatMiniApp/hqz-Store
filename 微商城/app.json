@@ -1,0 +1,48 @@
+{
+  "pages":[
+    
+    "pages/index/index",
+    "pages/purchase/purchase",
+    "pages/address/address",
+    "pages/address/delete",
+    "pages/address/select",
+    "pages/detail/detail",
+    "pages/purchase/nopurchase",
+    "pages/order/completion",
+    "pages/order/refund",
+    "pages/order/refundMode",
+    "pages/mine/mine",
+    "pages/my/my",
+    "pages/orderList/orderList",
+    "pages/car/car",
+    "pages/logistics/logistics",
+    "pages/logis/logis"
+  ],
+  "tabBar": {
+    "color": "#858585",
+    "selectedColor": "#008842",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icons/btn-tabs_01.png",
+        "selectedIconPath": "images/icons/btn-tabs_07.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/icons/btn-tabs_06.png",
+        "selectedIconPath": "images/icons/btn-tabs_10.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fac9dd",
+    "navigationBarTitleText": "一恋倾星",
+    "navigationBarTextStyle": "white"
+  },
+  "debug": true
+}
